@@ -13,7 +13,4 @@ class Solution:
                 if j == len(b):
                     return True
             i += 1
-        if j == len(b) :
-            return True
-        else:
-            return False
+        return False
