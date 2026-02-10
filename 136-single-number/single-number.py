@@ -1,10 +1,10 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        seen = set()
-        for num in nums:
-            if num in seen:
-                seen.remove(num)
-            else:
-                seen.add(num)
-        for num in seen:
-            return num
+        nums.sort()
+        if len(nums) == 1:
+            return nums[0]
+        for i in range(0,len(nums)-1,2):
+            if nums[i] != nums[i+1]:
+                return nums[i]
+        else:
+            return nums[-1]
