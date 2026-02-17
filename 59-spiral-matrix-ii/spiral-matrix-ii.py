@@ -1,7 +1,7 @@
 class Solution:
     def generateMatrix(self, n: int) -> List[List[int]]:
         matrix = [[0]*n for row in range(n)]
-
+        #This took 11 min
         right = True
         down = False
         left = False
