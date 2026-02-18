@@ -3,7 +3,7 @@ class Solution:
         
         for i in range(len(names)):
             m = i
-            for j in range(i ,len(names)):
+            for j in range(i+1 ,len(names)):
                 if heights[m] < heights[j]:
                     m = j
             heights[m],heights[i] = heights[i],heights[m]
