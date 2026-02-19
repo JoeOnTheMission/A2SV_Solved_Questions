@@ -5,6 +5,8 @@ class Solution:
             a = nums[i]
             b = nums[i+1] 
             c = nums[i+2]
+            if c == 0:
+                return 0
             if a + b > c:
                 if a + c > b:
                     if b + c > a:
