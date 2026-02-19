@@ -7,8 +7,6 @@ class Solution:
             c = nums[i+2]
             if c == 0:
                 return 0
-            if a + b > c:
-                if a + c > b:
-                    if b + c > a:
-                        return a+b+c
+            elif b + c > a:
+                return a+b+c
         return 0
