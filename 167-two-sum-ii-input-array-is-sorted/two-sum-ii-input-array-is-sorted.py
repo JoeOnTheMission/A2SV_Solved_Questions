@@ -10,4 +10,4 @@ class Solution:
                 i += 1
             else:
                 j -= 1
-        return [i + 1, j + 1 ]
+        return [i + 1, j + 1]
