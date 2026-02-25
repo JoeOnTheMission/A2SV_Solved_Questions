@@ -5,12 +5,12 @@ class Solution:
 
         for i in range(k):
             window_sum += nums[i] 
-        res = window_sum/k
+        res = window_sum
         #move the window 
         for j in range(len(nums)-k):
             first = nums[j]
             last = nums[j+k]
             window_sum -= first
             window_sum += last
-            res = max(res,window_sum/k)
-        return res
+            res = max(res,window_sum)
+        return res/k
