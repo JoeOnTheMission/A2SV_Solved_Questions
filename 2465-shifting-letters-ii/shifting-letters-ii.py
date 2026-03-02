@@ -21,8 +21,8 @@ class Solution:
         for i in range(len(num_version)):
             num_version[i] = (num_version[i] + prefix[i]) % 26
 
-        res = ""
+        res = []
         for num in num_version:
-            res += chr(num + offset)
-        return res
+            res.append(chr(num + offset))
+        return "".join(res)
             
