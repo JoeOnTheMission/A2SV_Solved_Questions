@@ -13,3 +13,4 @@ for i in range(1,len(pre)):
 for question in range(q):
     l,r = map(int,input().split())
     print(pre[r]- pre[l-1])
+      #    lwenfslk
