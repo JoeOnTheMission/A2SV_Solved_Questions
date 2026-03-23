@@ -7,14 +7,14 @@
 class Solution:
     def finder(self,cur,parent = None, grand = None):
         if not cur:
-            return 
-        
+            return 0
+        total = 0
         if grand and grand.val % 2 == 0:
-            self.res += cur.val
-        self.finder(cur.left,cur,parent)
-        self.finder(cur.right,cur,parent)
+            total += cur.val
+        total += self.finder(cur.left,cur,parent)
+        total += self.finder(cur.right,cur,parent)
+        return total
+
 
     def sumEvenGrandparent(self, root: Optional[TreeNode]) -> int:
-        self.res = 0
-        self.finder(root,None,None)
-        return self.res
+        return self.finder(root,None,None)
