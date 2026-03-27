@@ -1,6 +1,6 @@
 # 2112C-Coloring-Game
 
-**Problem:** [2112C-Coloring-Game](https://codeforces.com/problemset/problem/2112/C)
+**Problem:** [2112C-Coloring-Game](https://codeforces.com/contest/2112/problem/C)
 
 **time limit per test:** 2.5 seconds
 
