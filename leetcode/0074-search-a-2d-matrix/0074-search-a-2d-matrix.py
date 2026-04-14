@@ -6,9 +6,9 @@ class Solution:
         right = n * m - 1
         while left <= right:
             mid = left + (right - left)//2
-            print("1st",n,m)
-            print("2nd",left,mid,right)
-            print("3rd",mid,mid//2,mid%2)
+            #print("1st",n,m)
+            #print("2nd",left,mid,right)
+            #print("3rd",mid,mid//2,mid%2)
             if matrix[mid // m][mid % m] < target:
                 left = mid + 1
             else:
