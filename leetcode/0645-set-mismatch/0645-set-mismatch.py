@@ -3,7 +3,7 @@ class Solution:
         nums.sort()
         res = [0,0]
         x = set(nums)
-        print(x)
+        #print(x)
         for i in range(len(nums)):
             if i != 0 and nums[i-1] == nums[i]:
                 res[0] = nums[i]
